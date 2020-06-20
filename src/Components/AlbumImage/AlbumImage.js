@@ -11,8 +11,8 @@ class AlbumImage extends React.Component{
 
             return(
                    
-                        <div className="polaroid1">
-                             <img className="shown" src={require(`../../assets/${this.props.display}`)}  alt="5 Terre"  />
+                        <div className="polaroid1" style={{'transform': `translateY(-${this.props.index*(200/3)}%`}}>
+                             <img className="shown" src={require(`../../assets/${this.props.display}`)}   />
                         </div>
             
 

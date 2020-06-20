@@ -1,23 +1,15 @@
 
 .album-container{
     height: stretch;
+    overflow: hidden;
     width: 70%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+     justify-content: center;
     background: linear-gradient(135deg , rgba(0, 0, 0, 0.9) 0% , rgba(32, 32, 32, 0.8) 100% ) , url("../../assets/backround.jpg") center no-repeat;
     background-size: cover;
     position: relative;
 }
-div.polaroid1 {
-    width: 250px;
-    height: 250px;
-    background-color:white;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    align-self: center;
-    z-index: 10;
-    margin-left: -150px;
-  }
-  img.shown{
-      width: 100%;
-  } 
+button{
+    transform: translateY(500px);
+}

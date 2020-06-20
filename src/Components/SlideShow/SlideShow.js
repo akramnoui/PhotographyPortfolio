@@ -20,13 +20,15 @@ class SlideShow extends React.Component{
     NextImage(){
         const index = this.state.index + 1;
         this.setState({
-            Album: this.state.Albums[index]
+            Album: this.state.Albums[index] , 
+            index: index
         })
     }
     PreviousImage(){
-        const index = this.state.Album.index + -1 ;
+        const index = this.state.index  - 1 ;
         this.setState({
-            Album: this.state.Albums[index]
+            Album: this.state.Albums[index]  , 
+            index: index
         })
 
     }
@@ -35,13 +37,20 @@ class SlideShow extends React.Component{
             
 
             return(
+               
                     <div className="album-container">
-                        <button onClick={this.NextImage}>
+                        <button onClick={this.NextImage}  disabled={this.state.index === this.state.Albums.length - 1}>
                             next
                         </button>
-                        <button>
+                        <button onClick={this.PreviousImage} disabled={this.state.index === 0}>
                             prev
                         </button>
+                      
+                        {
+                            this.state.Albums.map( album =>
+                                <AlbumImage display={album} index={this.state.index}/>
+                            )
+                        }
                         <AlbumImage display={this.state.Album}/>
                     </div>
 
