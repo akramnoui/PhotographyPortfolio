@@ -4,7 +4,7 @@ import AlbumImage from "../AlbumImage/AlbumImage";
 
 
 
-const alb = ["photo1.jpeg" , "img5.PNG" , "img4.JPG"];
+const alb = ["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img6.jpeg" , "img2.jpg"];
 class SlideShow extends React.Component{
     constructor(props){
         super(props);
@@ -51,7 +51,6 @@ class SlideShow extends React.Component{
                                 <AlbumImage display={album} index={this.state.index}/>
                             )
                         }
-                        <AlbumImage display={this.state.Album}/>
                     </div>
 
             );
