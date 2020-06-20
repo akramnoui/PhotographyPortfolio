@@ -1,24 +1,62 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MainCover from './Components/MainCover/MainCover'
+import SlideShow from './Components/SlideShow/SlideShow'
+import MainImage from './Components/MainImage/MainImage' 
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+       <header className="header">
+         <nav>
+            <div className="flex-container" >
+              <img className="logo" src={require("./photography.png")}></img>
+              <h2 className="logo-text">Akram's Gallery</h2>
+
+              
+            </div>
+          
+           <ul class="nav-list">
+                    <div class="menu-icons close">
+                        <i class="icon ion-md-close"></i>
+                    </div>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link current">Home</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Destinations</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Pricing</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">booking</a> 
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">About</a> 
+                    </li>
+                </ul>
+         </nav>
+          <div className="background">
+            <MainCover/>
+          </div>
+       </header>
+       <main>
+         <div className="sld-container">
+         <SlideShow></SlideShow>
+        
+            <MainImage/>
+         
+         
+         </div>
+    
+        
+        
+
+       </main>
+
+      
     </div>
   );
 }
