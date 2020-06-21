@@ -38,7 +38,7 @@ class SlideShow extends React.Component{
 
             return(
                
-                    <div className="album-container">
+                    <div className={`album-container active-slide-${this.state.index}`} >
                         <button onClick={this.NextImage}  disabled={this.state.index === this.state.Albums.length - 1}>
                             next
                         </button>
@@ -47,10 +47,14 @@ class SlideShow extends React.Component{
                         </button>
                       
                         {
-                            this.state.Albums.map( album =>
-                                <AlbumImage display={album} index={this.state.index}/>
+                            this.state.Albums.map(( album , index)=>
+                                <AlbumImage id={`card-${index}`} display={album} index={this.state.index}/>
                             )
+                           
+                            
                         }
+                      
+                     
                     </div>
 
             );
