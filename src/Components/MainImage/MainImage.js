@@ -12,7 +12,7 @@ class MainImage extends React.Component{
 
             return(
                 <div className="polaroid">
-                    <img src={require("../../assets/img4.JPG")}  alt="5 Terre"  />
+                    <img src={require(`../../assets/${this.props.display}`)} alt="5 Terre"  />
                </div>
               
 

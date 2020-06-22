@@ -4,13 +4,12 @@ import AlbumImage from "../AlbumImage/AlbumImage";
 
 
 
-const alb = ["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img6.jpeg" , "img2.jpg"];
 class SlideShow extends React.Component{
     constructor(props){
         super(props);
         this.state = {
-            Albums: alb , 
-            Album: alb[0] , 
+            Albums: this.props.Albums , 
+            Album: this.props.Albums[0] , 
             index: 0
           
         }
@@ -20,9 +19,10 @@ class SlideShow extends React.Component{
     NextImage(){
         const index = this.state.index + 1;
         this.setState({
-            Album: this.state.Albums[index] , 
             index: index
         })
+
+        this.props.handler(index);
     }
     PreviousImage(){
         const index = this.state.index  - 1 ;
@@ -30,6 +30,8 @@ class SlideShow extends React.Component{
             Album: this.state.Albums[index]  , 
             index: index
         })
+        this.props.handler(index);
+
 
     }
 
@@ -39,7 +41,7 @@ class SlideShow extends React.Component{
             return(
                
                     <div className={`album-container active-slide-${this.state.index}`} >
-                        <button className="next" onClick={this.NextImage}  disabled={this.state.index === this.state.Albums.length - 1}>
+                        <button className="next" onClick={this.NextImage}  disabled={this.state.index === this.props.Albums.length - 1}>
                             <img className="next-image"src={require("../../assets/down.png")} ></img>
                         </button>
                         <button className="prev" onClick={this.PreviousImage} disabled={this.state.index === 0}>
@@ -49,7 +51,7 @@ class SlideShow extends React.Component{
                       
                       
                         {
-                            this.state.Albums.map(( album , index)=>
+                            this.props.Albums.map(( album , index)=>
                                 <AlbumImage id={`card-${index}`} display={album} index={this.state.index}/>
                             )
                            

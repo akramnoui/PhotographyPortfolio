@@ -5,8 +5,26 @@ import MainCover from './Components/MainCover/MainCover'
 import SlideShow from './Components/SlideShow/SlideShow'
 import MainImage from './Components/MainImage/MainImage' 
 
-function App() {
-  return (
+
+const alb = ["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img6.jpeg" , "img2.jpg"];
+
+class App extends React.Component {  
+  constructor(props){
+    super(props);
+    this.state={
+      Albums: alb , 
+      Album: alb[0] 
+    }
+    this.handler = this.handler.bind(this);
+  }
+  handler(index){
+    this.setState({
+      Album: this.state.Albums[index]
+    })
+  }
+
+  render() {
+    return (
     <div className="container">
        <header className="header">
          <nav>
@@ -44,8 +62,8 @@ function App() {
        </header>
        <main>
          <div className="sld-container">
-           <SlideShow></SlideShow>
-           <MainImage display={} />
+         <SlideShow Albums={this.state.Albums} handler={this.handler} ></SlideShow>
+            <MainImage display={this.state.Album} />
            <button className="next-slide" >
              <img className="next-image-1"src={require("./assets/after.png")} ></img>
            </button>
@@ -64,6 +82,7 @@ function App() {
       
     </div>
   );
+ }
 }
 
 export default App;
