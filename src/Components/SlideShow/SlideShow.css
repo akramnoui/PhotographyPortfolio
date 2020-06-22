@@ -11,6 +11,22 @@
     background-size: cover;
     position: relative;
 }
-button{
-    transform: translateY(500px);
+.prev{
+    transform: translate(50px , 680px);
+    align-self: flex-start;
+    background: none;
+    border: none;
+
+}
+.next{
+    transform: translate(50px , 800px);
+    align-self: flex-start;
+    background: none;
+    border: none;
+    
+
+}
+.next-image{
+    height: 20px;
+    width: 20px;
 }

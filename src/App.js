@@ -44,11 +44,16 @@ function App() {
        </header>
        <main>
          <div className="sld-container">
-         <SlideShow></SlideShow>
-        
-            <MainImage/>
-         
-         
+           <SlideShow></SlideShow>
+           <MainImage display={} />
+           <button className="next-slide" >
+             <img className="next-image-1"src={require("./assets/after.png")} ></img>
+           </button>
+
+           <button className="prev-slide" >
+                  <img className="next-image-1"src={require("./assets/before .png")} ></img>
+           </button>
+
          </div>
     
         

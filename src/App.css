@@ -96,6 +96,27 @@ h2{
   background-color: white;
 }
 
+.next-image-1{
+  height: 40px;
+  width: 40px;
+}
+.next-slide{
+  transform: translate( -515px,-275px);
+  align-self: flex-end;
+  background: none;
+  border: none;
+  z-index: 20;
+
+}
+.prev-slide{
+  transform: translate(-10px , -270px);
+  align-self: flex-end;
+  background: none;
+  border: none;
+  z-index: 2;
+}
+
+
 .close{
   position: absolute;
   top: 1rem;

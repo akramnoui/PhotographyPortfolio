@@ -11,7 +11,7 @@ class AlbumImage extends React.Component{
 
             return(
                         
-                        <div id={this.props.id} className="polaroid1" style={{'transform': `  translateY(${this.props.index*(-135) + 230}% ) `}}>
+                        <div id={this.props.id} className="polaroid1" style={{'transform': `  translateY(${this.props.index*(-600) / 5 + 230}% ) `}}>
                              <img className="shown" src={require(`../../assets/${this.props.display}`)}   />
                         </div>
             
