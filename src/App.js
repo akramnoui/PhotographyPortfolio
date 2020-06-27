@@ -6,7 +6,7 @@ import SlideShow from './Components/SlideShow/SlideShow'
 import MainImage from './Components/MainImage/MainImage' 
 
 
-const alb = ["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img6.jpeg" , "img2.jpg"];
+const alb = [["photo1.jpeg" ],["img5.PNG" ], ["img4.JPG"] , ["img6.jpeg"] , ["img2.jpg"]];
 
 class App extends React.Component {  
   constructor(props){
@@ -63,7 +63,7 @@ class App extends React.Component {
        <main>
          <div className="sld-container">
          <SlideShow Albums={this.state.Albums} handler={this.handler} ></SlideShow>
-            <MainImage display={this.state.Album} />
+            <MainImage display={this.state.Album[0]} />
            <button className="next-slide" >
              <img className="next-image-1"src={require("./assets/after.png")} ></img>
            </button>
