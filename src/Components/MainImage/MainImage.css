@@ -8,6 +8,9 @@ div.polaroid {
     align-self: center;
     z-index: 10;
   }
+  .polaroid:hover{
+    box-shadow: 0 8px 16px 0 rgba(206, 203, 203, 0.2);
+  }
   img{
       height: 100%;
       width: 100%;

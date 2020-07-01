@@ -19,6 +19,7 @@ class App extends React.Component {
     this.handler = this.handler.bind(this);
     this.nextimg = this.nextimg.bind(this);
     this.previmg =  this.previmg.bind(this);
+    this.resetindex = this.resetindex.bind(this);
   }
 
   handler(index){
@@ -36,6 +37,11 @@ class App extends React.Component {
     let index = this.state.imgindex - 1;
     this.setState({
       imgindex: index
+    })
+  }
+  resetindex(){
+    this.setState({
+      imgindex: 0
     })
   }
 
@@ -78,7 +84,7 @@ class App extends React.Component {
        </header>
        <main>
          <div className="sld-container">
-         <SlideShow Albums={this.state.Albums} handler={this.handler} ></SlideShow>
+         <SlideShow Albums={this.state.Albums} handler={this.handler} resetindex={this.resetindex} ></SlideShow>
             <MainImage display={this.state.Album[this.state.imgindex]} />
            <button className="next-slide" onClick={this.nextimg} disabled={ this.state.imgindex === this.state.Album.length - 1}  >
              <img className="next-image-1"src={require("./assets/after.png")} ></img>

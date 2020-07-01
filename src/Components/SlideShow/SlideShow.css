@@ -7,19 +7,19 @@
     flex-direction: column;
      justify-content: center;
      align-content: flex-start;
-    background: linear-gradient(135deg , rgba(0, 0, 0, 0.9) 0% , rgba(32, 32, 32, 0.8) 100% ) , url("../../assets/backround.jpg") center no-repeat;
+    background: linear-gradient(135deg , rgba(0, 0, 0, 0.9) 0% , rgba(7, 7, 7, 0.8) 100% ) , url("../../assets/backround.jpg") center no-repeat;
     background-size: cover;
     position: relative;
 }
 .prev{
-    transform: translate(50px , 680px);
+    transform: translate(50px , 780px);
     align-self: flex-start;
     background: none;
     border: none;
 
 }
 .next{
-    transform: translate(50px , 800px);
+    transform: translate(50px , 920px);
     align-self: flex-start;
     background: none;
     border: none;

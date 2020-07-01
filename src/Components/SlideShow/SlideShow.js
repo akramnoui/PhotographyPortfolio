@@ -23,6 +23,7 @@ class SlideShow extends React.Component{
         })
 
         this.props.handler(index);
+        this.props.resetindex();
     }
     PreviousImage(){
         const index = this.state.index  - 1 ;
@@ -31,6 +32,8 @@ class SlideShow extends React.Component{
             index: index
         })
         this.props.handler(index);
+        this.props.resetindex();
+
 
 
     }
