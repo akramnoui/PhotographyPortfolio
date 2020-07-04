@@ -55,7 +55,7 @@ class SlideShow extends React.Component{
                       
                         {
                             this.props.Albums.map(( album , index)=>
-                                <AlbumImage id={`card-${index}`} display={album[0]} index={this.state.index}/>
+                                <AlbumImage id={`card-${index}`} title={this.props.Titles[index]} display={album[0]} index={this.state.index}/>
                             )
                            
                             

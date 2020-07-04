@@ -7,6 +7,7 @@ import MainImage from './Components/MainImage/MainImage'
 
 
 const alb = [["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img2.jpg" ],["img5.PNG" ], ["img4.JPG"] , ["img6.jpeg"] , ["img2.jpg"]];
+const titles = ["Architecture " , "Portaits" , "Landscape" , "VSCO" , "Random Shots"];
 
 class App extends React.Component {  
   constructor(props){
@@ -14,7 +15,8 @@ class App extends React.Component {
     this.state={
       Albums: alb , 
       Album: alb[0],
-      imgindex: 0
+      imgindex: 0 , 
+      Titles: titles
     }
     this.handler = this.handler.bind(this);
     this.nextimg = this.nextimg.bind(this);
@@ -84,7 +86,7 @@ class App extends React.Component {
        </header>
        <main>
          <div className="sld-container">
-         <SlideShow Albums={this.state.Albums} handler={this.handler} resetindex={this.resetindex} ></SlideShow>
+         <SlideShow Albums={this.state.Albums} Titles={this.state.Titles} handler={this.handler} resetindex={this.resetindex} ></SlideShow>
             <MainImage display={this.state.Album[this.state.imgindex]} />
            <button className="next-slide" onClick={this.nextimg} disabled={ this.state.imgindex === this.state.Album.length - 1}  >
              <img className="next-image-1"src={require("./assets/after.png")} ></img>
