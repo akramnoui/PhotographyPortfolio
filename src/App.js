@@ -4,6 +4,8 @@ import './App.css';
 import MainCover from './Components/MainCover/MainCover'
 import SlideShow from './Components/SlideShow/SlideShow'
 import MainImage from './Components/MainImage/MainImage' 
+import Header from './Components/Header/Header' 
+
 
 
 const alb = [["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img2.jpg" ],["img5.PNG" ], ["img4.JPG"] , ["img6.jpeg"] , ["img2.jpg"]];
@@ -51,35 +53,7 @@ class App extends React.Component {
     return (
     <div className="container">
        <header className="header">
-         <nav>
-            <div className="flex-container" >
-              <img className="logo" src={require("./photography.png")}></img>
-              <h2 className="logo-text">Akram's Gallery</h2>
-
-              
-            </div>
-          
-           <ul class="nav-list">
-                    <div class="menu-icons close">
-                        <i class="icon ion-md-close"></i>
-                    </div>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link current">Home</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Destinations</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Pricing</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">booking</a> 
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About</a> 
-                    </li>
-                </ul>
-         </nav>
+          <Header/>
           <div className="background">
             <MainCover/>
           </div>

@@ -4,13 +4,20 @@
     flex-direction: row;
     position: relative;
     justify-content: center;
-    top: 70px;
     width: 100%;
     height: 80%;
-    overflow: initial;
   
   }
-
+  .App-header {
+    background-color: #bfc8da;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
   
 .img3{
   height: 300px;
@@ -33,11 +40,12 @@
   height: 400px;
   width: 320px ;
   margin-top: 40px;
-  transform: translateX(100px)
+  z-index: 10;
+  transform: translateX(140px)
 ;
 }
 .img2{
-  height: 500px;
+  height: 501px;
   width: 400px ;
   margin-top: 20px;
 ;
@@ -49,12 +57,13 @@
   z-index:0;
   margin-top: 100px;
   margin-right: 50px;
- transform: translateX(-180px);
+ transform: translateX(-210px);
 }
 .img1{
-  height: 380px;
-  width: 300px ;
+  height: 350px;
+  width: 280px ;
   margin-top: 150px;
-  z-index: -10;
+  margin-left: 50px;
+  z-index: 5;
   transform: translateX(200px);
 }
