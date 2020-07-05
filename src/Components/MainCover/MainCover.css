@@ -1,9 +1,16 @@
 .slideshow-container{
+    margin-top: -150px ;
     background-color: black;
     display: flex;
     flex-direction: row;
     position: relative;
     justify-content: center;
+    width: 100%;
+    height: 100%;
+  
+  }
+  .slideshow-container1{
+    background-color: rgb(117, 14, 14);
     width: 100%;
     height: 80%;
   
@@ -21,7 +28,7 @@
   
 .img3{
   height: 300px;
-  width: 260px ;
+  width: 261px ;
   z-index: 10;
   margin-top: 50px;
   transform: translateX(-100px);
@@ -31,7 +38,7 @@
 .img4{
   height: 300px;
   width: 290px ;
-  margin-top: 100px;
+  margin-top: 101px;
   z-index: 20;
   transform: translateX(40px);
 ;
@@ -62,8 +69,19 @@
 .img1{
   height: 350px;
   width: 280px ;
-  margin-top: 150px;
+  margin-top: 151px;
   margin-left: 50px;
   z-index: 5;
   transform: translateX(200px);
+}
+.main-title{
+  position: relative;
+  color: rgb(255, 255, 255);
+  z-index: 100;
+  width: 670px;
+  transform: translate(430px , 150px);
+  font-size: 4rem;
+  box-shadow: 0 4px 8px 0 rgba(53, 53, 53, 0.253);
+  background-color: rgba(14, 14, 14, 0);
+ 
 }

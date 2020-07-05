@@ -5,6 +5,7 @@ import MainCover from './Components/MainCover/MainCover'
 import SlideShow from './Components/SlideShow/SlideShow'
 import MainImage from './Components/MainImage/MainImage' 
 import Header from './Components/Header/Header' 
+import Presentation from './Components/Presentation/Presentation' 
 
 
 
@@ -59,6 +60,8 @@ class App extends React.Component {
           </div>
        </header>
        <main>
+       <Presentation></Presentation>
+        
          <div className="sld-container">
          <SlideShow Albums={this.state.Albums} Titles={this.state.Titles} handler={this.handler} resetindex={this.resetindex} ></SlideShow>
             <MainImage display={this.state.Album[this.state.imgindex]} />
@@ -71,7 +74,6 @@ class App extends React.Component {
            </button>
 
          </div>
-    
         
         
 

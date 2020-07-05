@@ -11,6 +11,10 @@ class MainCover extends React.Component{
             
 
             return(
+              <div className="slideshow-container1">
+                 <h1 className="main-title">
+                     ART&nbsp;.&nbsp;PHOTO&nbsp;.&nbsp;STORY
+                  </h1>
                 <div className="slideshow-container">
 
                 <img  src={require("../../assets/photo1.jpeg")}  className="img1"  />
@@ -24,9 +28,11 @@ class MainCover extends React.Component{
                   <img  src={require("../../assets/img6.jpeg")}  className="img6"  />
          
          
-         
+                 
          
                 </div>
+                </div>
+               
             );
 
 
