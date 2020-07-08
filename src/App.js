@@ -6,6 +6,7 @@ import SlideShow from './Components/SlideShow/SlideShow'
 import MainImage from './Components/MainImage/MainImage' 
 import Header from './Components/Header/Header' 
 import Presentation from './Components/Presentation/Presentation' 
+import Footer from './Components/Footer/Footer'
 
 
 
@@ -52,6 +53,9 @@ class App extends React.Component {
 
   render() {
     return (
+      <div>
+
+      
     <div className="container">
        <header className="header">
           <Header/>
@@ -78,8 +82,10 @@ class App extends React.Component {
         
 
        </main>
-
+        
       
+    </div>
+    <Footer/>
     </div>
   );
  }

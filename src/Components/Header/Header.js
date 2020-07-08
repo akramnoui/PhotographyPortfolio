@@ -19,21 +19,21 @@ class Header extends React.Component{
                   
                 </div>
               
-               <ul class="nav-list">
-                        <div class="menu-icons close">
-                            <i class="icon ion-md-close"></i>
+               <ul className="nav-list">
+                        <div className="menu-icons close">
+                            <i className="icon ion-md-close"></i>
                         </div>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a href="#" class="nav-link current">Home</a> 
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a href="#" class="nav-link">Pricing</a> 
                         </li>
-                        <li class="nav-item">
+                        <li className="nav-item">
                             <a href="#" class="nav-link">booking</a> 
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">About</a> 
+                        <li className="nav-item">
+                            <a href="#" className="nav-link">About</a> 
                         </li>
                     </ul>
              </nav>
