@@ -10,20 +10,24 @@ class SlideShow extends React.Component{
         this.state = {
             Albums: this.props.Albums , 
             Album: this.props.Albums[0] , 
-            index: 0
+            index: 0 , 
+            
           
         }
+        this.interval = null ; 
         this.NextImage = this.NextImage.bind(this);
         this.PreviousImage = this.PreviousImage.bind(this);
     }
     NextImage(){
-        const index = this.state.index + 1;
+        let current = this.state.index;
+        let next = ++current % this.props.Albums.length;
         this.setState({
-            index: index
+            index: next
         })
 
-        this.props.handler(index);
+        this.props.handler(next);
         this.props.resetindex();
+
     }
     PreviousImage(){
         const index = this.state.index  - 1 ;
@@ -37,6 +41,15 @@ class SlideShow extends React.Component{
 
 
     }
+    componentDidMount() {
+       
+        this.interval = setInterval(this.NextImage, 3000);
+        
+      }
+    
+      componentWillUnmount() {
+        clearInterval(this.interval);
+      }
 
         render(){
             
