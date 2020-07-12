@@ -85,3 +85,18 @@
   background-color: rgba(14, 14, 14, 0);
  
 }
+@media (max-width:1000px)
+{
+  .slideshow-container{
+    margin-top: -150px ;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    justify-content: center;
+    width: 120%;
+    height: 100%;
+  
+  }
+  
+}

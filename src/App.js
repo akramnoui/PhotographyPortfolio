@@ -11,7 +11,7 @@ import Footer from './Components/Footer/Footer'
 
 
 const alb = [["photo1.jpeg" , "img5.PNG" , "img4.JPG" , "img2.jpg" ],["img5.PNG" ], ["img4.JPG"] , ["img6.jpeg"] , ["img2.jpg"]];
-const titles = ["Architecture " , "Portaits" , "Landscape" , "VSCO" , "Random Shots"];
+const titles = ["Architecture " , "Portaits" , "Landscape" , "VSCO" , "ArtWork"];
 
 class App extends React.Component {  
   constructor(props){
@@ -53,7 +53,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+      <div className="container-1">
 
       
     <div className="container">
@@ -68,7 +68,7 @@ class App extends React.Component {
         
          <div className="sld-container">
          <SlideShow Albums={this.state.Albums} Titles={this.state.Titles} handler={this.handler} resetindex={this.resetindex} ></SlideShow>
-            <MainImage display={this.state.Album[this.state.imgindex]} />
+            <MainImage display={this.state.Album[this.state.imgindex]} Titles={this.state.Titles} index={alb.indexOf(this.state.Album)} />
            <button className="next-slide" onClick={this.nextimg} disabled={ this.state.imgindex === this.state.Album.length - 1}  >
              <img className="next-image-1"src={require("./assets/after.png")} ></img>
            </button>

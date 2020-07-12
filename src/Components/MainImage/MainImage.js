@@ -11,9 +11,15 @@ class MainImage extends React.Component{
             
 
             return(
+                <div className='card-1'>
+                    <h1 className='title'>
+                      {this.props.Titles[this.props.index]} |
+                    </h1>
                 <div className="polaroid">
                     <img src={require(`../../assets/${this.props.display}`)} alt="5 Terre"  />
                </div>
+               </div>
+
               
 
             );

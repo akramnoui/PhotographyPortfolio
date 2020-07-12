@@ -18,7 +18,7 @@ class AlbumImage extends React.Component{
                                 </div>
                                 </div>
                                 <div class="container1">
-                                    <h3>{this.props.title}</h3>
+                                    <h3 className='title-2'>{this.props.title}</h3>
                                 </div>
                             </div>
                         
