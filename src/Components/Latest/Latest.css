@@ -1,7 +1,35 @@
 .grid-1{
     display: grid;
-    grid-template-rows: 100px 500px 100px;
+    grid-template-rows: 100px 600px 200px;
 
+}
+.Latest-images{
+    display: grid;
+    margin-top: 100px;
+    grid-template-rows: 200px 200px;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: center;
+    grid-gap: 5px;
+}
+.div1{
+    background-color: khaki;
+}
+.div2{
+    background-color: lemonchiffon;
+    grid-row: span 2;
+ }
+ .div3{
+    background-color: lightcoral;
+    grid-column: span 2;
+ }
+ .div4{
+    background-color: lightgreen;
+ }
+.div5{
+    background-color: lightpink;
+}
+.div6{
+    background-color: lightskyblue;
 }
 .Latest-work{
     background-color: rgb(226, 224, 224);

@@ -16,7 +16,14 @@ class Latest extends React.Component{
                     <div className="Latest-work" >
                         <h1 className="Latest-title">Latest Work</h1>
                     </div>
-                    <div className="text">
+                    <div className="Latest-images">
+                        <div className="div1"></div>
+                        <div className="div2"></div>
+                        <div className="div3"></div>
+                        <div className="div4"></div>
+                        <div className="div5"></div>
+                        <div className="div6"></div>
+                        <div className="div7"></div>
                      
 
                     </div>
