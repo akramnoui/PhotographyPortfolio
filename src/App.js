@@ -7,6 +7,7 @@ import MainImage from './Components/MainImage/MainImage'
 import Header from './Components/Header/Header' 
 import Presentation from './Components/Presentation/Presentation' 
 import Footer from './Components/Footer/Footer'
+import Latest from './Components/Latest/Latest'
 
 
 
@@ -85,6 +86,7 @@ class App extends React.Component {
         
       
     </div>
+    <Latest/>
     <Footer/>
     </div>
   );

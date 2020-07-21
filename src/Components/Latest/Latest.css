@@ -1,0 +1,35 @@
+.grid-1{
+    display: grid;
+    grid-template-rows: 100px 500px 100px;
+
+}
+.Latest-work{
+    background-color: rgb(226, 224, 224);
+
+}
+.Latest-title{
+
+    font-family: 'Gotham', sans-serif ;
+    font-weight: 500;
+    margin-top: 60px;
+    font-size: 45px;
+    margin-left: 60px;
+    
+}
+
+.Interested{
+    font-family: 'Gotham', sans-serif ;
+    font-weight: 500;
+    font-size: 25px;
+    margin-top: 0px;
+}
+.Contact-us{
+    justify-self: center;
+}
+.let-talk{
+    font-family: 'Gotham', sans-serif ;
+    font-weight: 400;
+    font-size: 20px;
+    margin-left: 110px;
+
+}
