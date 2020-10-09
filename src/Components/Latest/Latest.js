@@ -14,17 +14,16 @@ class Latest extends React.Component{
                 <div className="grid-1">
                    
                     <div className="Latest-work" >
-                        <h1 className="Latest-title">Latest Work</h1>
+                        <h1 className="Latest-title">Dive into  Architecture</h1>
                     </div>
                     <div className="Latest-images">
-                        <div className="div1"></div>
-                        <div className="div2"></div>
-                        <div className="div3"></div>
-                        <div className="div4"></div>
-                        <div className="div5"></div>
-                        <div className="div6"></div>
-                        <div className="div7"></div>
+                    <img  src={require("../../assets/arch5.jpeg")}  className="arch5"  />
+                     <img  src={require("../../assets/arch1.jpg")}  className="arch1"  />
+                     <img  src={require("../../assets/arch6.jpeg")}  className="arch6"  />
+                     <img  src={require("../../assets/photo1.jpeg")}  className="arch7"  />
+                     <img  src={require("../../assets/arch2.jpeg")}  className="arch2"  />
                      
+                     <img  src={require("../../assets/arch3.jpeg")}  className="arch3"  />
 
                     </div>
                     <div className="Contact-us" >

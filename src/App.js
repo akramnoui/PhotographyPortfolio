@@ -8,6 +8,7 @@ import Header from './Components/Header/Header'
 import Presentation from './Components/Presentation/Presentation' 
 import Footer from './Components/Footer/Footer'
 import Latest from './Components/Latest/Latest'
+import Architecture from './Components/Architecture/Architecture'
 
 
 

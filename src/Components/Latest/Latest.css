@@ -1,45 +1,61 @@
 .grid-1{
     display: grid;
-    grid-template-rows: 100px 600px 200px;
+    grid-template-rows: 10px 440px 300px;
+    background-color: #faf3e9;
+
 
 }
 .Latest-images{
     display: grid;
-    margin-top: 100px;
-    grid-template-rows: 200px 200px;
-    grid-template-columns: 200px 200px 200px 200px;
+    padding-top: 10rem;
+    grid-template-rows: 220px 220px;
+    grid-template-columns: 320px 200px 200px 200px;
     justify-content: center;
-    grid-gap: 5px;
+    grid-gap: 10px;
 }
-.div1{
-    background-color: khaki;
+.arch1{
+    height: 220px;
+    width: 200px ;
 }
-.div2{
-    background-color: lemonchiffon;
-    grid-row: span 2;
- }
- .div3{
-    background-color: lightcoral;
-    grid-column: span 2;
- }
- .div4{
-    background-color: lightgreen;
- }
-.div5{
-    background-color: lightpink;
+.arch2{
+    height: 270px;
+  width: 200px ;
 }
-.div6{
-    background-color: lightskyblue;
+.arch6{
+    height: 220px;
+  width: 410px ;
+  grid-column: span 2;
 }
+.arch7{
+    height: 270px;
+    width: 200px ;
+  
+
+}
+.arch3{
+    height: 270px;
+  width: 200px ;
+}
+
+.arch5{
+ 
+  grid-row: span 2;
+
+
+
+}
+
 .Latest-work{
-    background-color: rgb(225, 224, 224);
+    margin-top: 1rem;
+    background-color: #edcfa9;
+    height: 8rem;
+    width: 40rem;
 
 }
 .Latest-title{
 
     font-family: 'Gotham', sans-serif ;
     font-weight: 500;
-    margin-top: 60px;
     font-size: 45px;
     margin-left: 60px;
     
@@ -49,9 +65,10 @@
     font-family: 'Gotham', sans-serif ;
     font-weight: 500;
     font-size: 25px;
-    margin-top: 0px;
+    margin-top: 10rem;
 }
 .Contact-us{
+    margin-top: 2rem;
     justify-self: center;
 }
 .let-talk{
