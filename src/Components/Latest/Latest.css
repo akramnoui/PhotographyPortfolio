@@ -1,16 +1,22 @@
 .grid-1{
     display: grid;
-    grid-template-rows: 10px 440px 300px;
+    grid-template-rows: 10px 500px 200px;
     background-color: #faf3e9;
 
 
 }
 .Latest-images{
     display: grid;
-    padding-top: 10rem;
+    background-color: white;
+    margin-top: 8rem;
+    padding-bottom: 1.5rem;
+    height: 520px;
+    width: 65rem;
     grid-template-rows: 220px 220px;
     grid-template-columns: 320px 200px 200px 200px;
     justify-content: center;
+    align-content: center;
+    justify-self: center;
     grid-gap: 10px;
 }
 .arch1{
@@ -18,7 +24,7 @@
     width: 200px ;
 }
 .arch2{
-    height: 270px;
+    height: 250px;
   width: 200px ;
 }
 .arch6{
@@ -27,26 +33,28 @@
   grid-column: span 2;
 }
 .arch7{
-    height: 270px;
+    height: 250px;
     width: 200px ;
   
 
 }
 .arch3{
-    height: 270px;
+    height: 250px;
   width: 200px ;
 }
 
 .arch5{
  
   grid-row: span 2;
+  height: 480px;
 
 
 
 }
 
 .Latest-work{
-    margin-top: 1rem;
+    margin-top: 3rem;
+    margin-left: 1rem;
     background-color: #edcfa9;
     height: 8rem;
     width: 40rem;
