@@ -10,11 +10,30 @@
   
   }
   .slideshow-container1{
-    background-color: rgb(117, 14, 14);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
 
   
+  }
+  .capturin-text{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 28px;
+    color: rgba(190, 184, 184, 0.89);
+    z-index: 30;
+    align-self: center;
+    justify-self: center;
+    margin-left: 30.5rem;
+    margin-top: 2rem;
+    
+  }
+  .separator{
+    height: 0.5px;
+    width: 20rem; 
+    margin-left: 37rem;
+
+    background-color: rgba(187, 187, 187, 0.74);
   }
   .App-header {
     background-color: #bfc8da;

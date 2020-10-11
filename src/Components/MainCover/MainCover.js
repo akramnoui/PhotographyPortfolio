@@ -31,6 +31,9 @@ class MainCover extends React.Component{
                  
          
                 </div>
+                <h1 className="capturin-text">- Capturing Moments is What we do - </h1>
+                <div className="separator"></div>
+
                 </div>
                
             );
