@@ -24,7 +24,6 @@ class Latest extends React.Component{
                     {/* <h1 className="h1-title">
                         Marrakech - Casablanca
                     </h1> */}
-                    <h1 className="capturing-title"> Capturing Architecture</h1>
                     <div className="Latest-images">
                     <img  src={require("../../assets/arch5.jpeg")}  className="arch5"  />
                      <img  src={require("../../assets/arch1.jpg")}  className="arch1"  />
@@ -35,7 +34,8 @@ class Latest extends React.Component{
                      <img  src={require("../../assets/arch3.jpeg")}  className="arch3"  />
 
                     </div>
-                    
+                    <h1 className="capturing-title"> Capturing Architecture</h1>
+
 
                 </div>
                
